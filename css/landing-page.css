@@ -47,7 +47,7 @@ h1, h3 {
   0% {
     visibility: hidden;
     opacity: 0;
-    transform: translateY(50%);
+    transform: translateY(60%);
   }
   100% {
     visibility: visible;
@@ -129,8 +129,8 @@ h1, h3 {
   animation-name: slideRight;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
-  animation-duration: 0.6s;
-  animation-delay: .8s;
+  animation-duration: 1s;
+  animation-delay: 1.2s;
   animation-fill-mode: forwards;
 }
 
@@ -139,8 +139,8 @@ h1, h3 {
   animation-name: slideLeft;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
-  animation-duration: 0.6s;
-  animation-delay: .8s;
+  animation-duration: 1s;
+  animation-delay: 1.2s;
   animation-fill-mode: forwards;
 }
 
@@ -150,7 +150,7 @@ h1, h3 {
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   animation-duration: 1s;
-  animation-delay: .8s;
+  animation-delay: 1.2s;
   animation-fill-mode: forwards;
 }
 
@@ -160,7 +160,7 @@ h1, h3 {
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   animation-duration: 1s;
-  animation-delay: .8s;
+  animation-delay: 1.2s;
   animation-fill-mode: forwards;
 }
 
@@ -181,7 +181,7 @@ h1, h3 {
     animation-name: slideUpLess;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
-    animation-duration: .8s;
+    animation-duration: 1.2s;
     animation-fill-mode: forwards;
 }
 
