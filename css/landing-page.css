@@ -23,12 +23,76 @@ h6 {
   background-color: #d2dff2;
 }
 
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .topnav {
     font-size: 30px;
     justify-content: space-between;
     align-items: center;
     display: flex;
     background-color: #d2dff2;
+
+}
+
+.lefticon {
+  animation-name: slideRight;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.6s;
+}
+
+.righticon {
+  animation-name: slideLeft;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.6s;
+}
+
+.downicon {
+  animation-name: slideDown;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+}
+
+.upicon {
+  animation-name: slideUp;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
 }
 
 .lead {
