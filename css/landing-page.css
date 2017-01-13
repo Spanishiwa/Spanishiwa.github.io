@@ -19,45 +19,103 @@ h6 {
     font-weight: 700;
 }
 
+h1, h3 {
+  visibility: hidden;
+  animation: 1s fadeIn;
+  animation-duration: 1s;
+  animation-delay: .8s;
+  animation-fill-mode: forwards;
+}
+
 .navbar {
   background-color: #d2dff2;
 }
 
 @keyframes slideDown {
   0% {
+    visibility: hidden;
+    opacity: 0;
     transform: translateY(-100%);
   }
   100% {
+    visibility: visible;
+    opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes slideUp {
   0% {
+    visibility: hidden;
+    opacity: 0;
     transform: translateY(50%);
   }
   100% {
+    visibility: visible;
+    opacity: 1;
     transform: translateY(0);
   }
 }
 
+@keyframes slideUpLess {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 @keyframes slideRight {
   0% {
+    visibility: hidden;
+    opacity: 0;
     transform: translateX(-100%);
   }
   100% {
+    visibility: visible;
+    opacity: 1;
     transform: translateX(0);
   }
 }
 
 @keyframes slideLeft {
   0% {
+    visibility: hidden;
+    opacity: 0;
     transform: translateX(100%);
   }
   100% {
+    visibility: visible;
+    opacity: 1;
     transform: translateX(0);
   }
 }
+
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.btn {
+  visibility: hidden;
+  animation: 1s fadeIn;
+  animation-duration: 1s;
+  animation-delay: 2.8s;
+  animation-fill-mode: forwards;
+}
+
 .topnav {
     font-size: 30px;
     justify-content: space-between;
@@ -68,31 +126,43 @@ h6 {
 }
 
 .lefticon {
+  visibility: hidden;
   animation-name: slideRight;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   animation-duration: 0.6s;
+  animation-delay: 2.8s;
+  animation-fill-mode: forwards;
 }
 
 .righticon {
+  visibility: hidden;
   animation-name: slideLeft;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   animation-duration: 0.6s;
+  animation-delay: 2.8s;
+  animation-fill-mode: forwards;
 }
 
 .downicon {
+  visibility: hidden;
   animation-name: slideDown;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   animation-duration: 1s;
+  animation-delay: 2.8s;
+  animation-fill-mode: forwards;
 }
 
 .upicon {
+  visibility: hidden;
   animation-name: slideUp;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   animation-duration: 1s;
+  animation-delay: 2.8s;
+  animation-fill-mode: forwards;
 }
 
 .lead {
@@ -107,6 +177,13 @@ h6 {
     color: #f8f8f8;
     background: url(../img/davis.jpeg) no-repeat center center;
     background-size: cover;
+    visibility: hidden;
+
+    animation-name: slideUpLess;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
 }
 
 .intro-message {
@@ -122,6 +199,10 @@ h6 {
 }
 
 .intro-divider {
+    visibility: hidden;
+    animation: 1s slideRight;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
     width: 400px;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
