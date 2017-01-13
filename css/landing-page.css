@@ -21,6 +21,10 @@ h6 {
     font-weight: 700;
 }
 
+.navbar {
+  background-color: #d2dff2;
+}
+
 .topnav {
     font-size: 30px;
     justify-content: space-between;
