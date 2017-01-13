@@ -22,7 +22,10 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px;
+    font-size: 30px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 .lead {
@@ -94,13 +97,14 @@ h6 {
 
 .content-section-a {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #eddcd5;
 }
 
 .content-section-b {
     padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
+    background-color: #d2dff2;
+    border-top: 1px solid #d2dff2;
+    border-bottom: 1px solid #d2dff2;
 }
 
 .section-heading {
@@ -110,12 +114,12 @@ h6 {
 .section-heading-spacer {
     float: left;
     width: 200px;
-    border-top: 3px solid #e7e7e7;
+    border-top: 3px solid #272a2f;
 }
 
 .banner {
     padding: 100px 0;
-    color: #f8f8f8;
+    color: #d2dff2;
     background: url(../img/banner-bg.jpg) no-repeat center center;
     background-size: cover;
 }
@@ -162,7 +166,7 @@ h6 {
 
 footer {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #d2dff2;
 }
 
 p.copyright {
